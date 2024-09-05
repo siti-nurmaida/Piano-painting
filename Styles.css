@@ -1,0 +1,59 @@
+html {
+	box-sizing: border-box;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #e8eaed;
+}
+.piano {
+	width: 993px;
+	height: 290px;
+	background-color: #0723d9;
+	margin: 80px auto;
+	padding: 90px 20px 0 20px;
+	border-radius: 10px;
+	position: relative;
+}
+.keys {
+	width: 947px;
+	height: 170px;
+	background-color: #050505;
+	padding-left: 11px;
+	overflow: hidden;
+}
+.key {
+	background-color: #fff;
+	width: 40px;
+	height: 165px;
+	float: left;
+	margin: 2px;
+	border-radius: 0 0 3px 3px;
+	position: relative;
+}
+.key.black-key::after {
+	background-color: #050505;
+	width: 32px;
+	height: 100px;
+	content: "";
+	position: absolute;
+	left: -18px;
+	border-radius: 0 0 3px 3px;
+}
+@media (max-width: 768px) {
+	.piano {
+		width: 370px;
+	}
+	.keys {
+		width: 330px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+	.piano {
+		width: 675px;
+	}
+	.keys {
+		width: 635px;
+	}
+}
